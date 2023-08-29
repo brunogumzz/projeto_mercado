@@ -1,0 +1,108 @@
+<!cadastro_cliente html>
+  <html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script language="JavaScript" type="text/javascript" src="cidades-estados.js"></script>
+
+
+  <head>
+    <title>Faça seu cadastro!</title>
+    <link rel="icon" href="C:\Users\bruno_gumz\Documents\preço certo atualizado\preço certo\imagens\LOGO REDONDA.png">
+  </head>
+
+  <body style="background-color: #d4d3d3;">
+
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 85vh; text-align: center; margin-top: 100px;">
+      <div style="background-color: #f2e2d1; margin-top: 20px; width: 50%; box-shadow: 10px 10px 20px rgba(0.5, 0.5, 0.5, 0.5);">
+
+        <div style="text-align: center;">
+          <h1 style="font-size: 30px; margin-top: 5%;">Faça seu cadastro</h1>
+          <h5 style="font-size: 15px;">Já possui uma conta?</h5>
+        </div>
+
+        <div class="container">
+          <div class="d-flex flex-column justify-content-center">
+            <br>
+            <form class="mt-4">
+
+              <div class="form-group">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+
+              <div class="form-group">
+                <label for="inputPassword4">Senha</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Endereço</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Rua...">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Número</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Número da Casa...">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="estado2">Estado</label>
+                  <select id="estado2" class="form-control">
+                    <option selected>Selecione...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="cidade2">Cidade</label>
+                  <select id="cidade2" class="form-control">
+                    <option selected>Selecione...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputZip">CNPJ</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            
+              <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Autenticação
+                </label>
+              </div>
+
+              <div class="form-group d-flex align-items-center justify-content-center">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </div>
+            </form>
+          </div>
+          <div style="padding-bottom: 30px;" class=" d-flex align-items-center justify-content-center">
+            <a href="login.html">Faça Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </body>
+  <script language="JavaScript" type="text/javascript" charset="utf-8">
+    new dgCidadesEstados({
+      cidade: document.getElementById('cidade2'),
+      estado: document.getElementById('estado2'),
+      estadoVal: 'Selecione um estado',
+      cidadeVal: 'Selecione uma cidade'
+    })
+  </script>
+
+  </html>
